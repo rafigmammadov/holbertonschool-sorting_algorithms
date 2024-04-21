@@ -20,9 +20,9 @@ void insertion_sort_list(listint_t **list)
 		return;
 	}
 
-	current = (*list)->next;
+	curr = (*list)->next;
 
-	while (current)
+	while (curr)
 	{
 		next = temp->next;
 
