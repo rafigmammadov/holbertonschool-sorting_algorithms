@@ -24,9 +24,9 @@ void insertion_sort_list(listint_t **list)
 
 	while (curr)
 	{
-		next = temp->next;
-
 		temp = curr;
+
+		next = curr->next;
 
 		while (temp->prev != NULL && temp->prev->n > curr->n)
 			temp = temp->prev;
